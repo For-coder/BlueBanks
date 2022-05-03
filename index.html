@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="img/logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BlueBanks | Real online banking</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav">
+        <!-- LOGO -->
+        <div>
+          <a href="#header"
+            ><img
+              src="img/logo.png"
+              alt="Bankist logo"
+              class="nav__logo"
+              id="logo"
+          /></a>
+        </div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li class="open nav__item">
+              <a class="nav__link" href="#">Open account</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li>
+                  <a class="btn--show-modal" href="#">Checking</a>
+                </li>
+                <li><a class="btn--show-modal" href="#">Saving</a></li>
+                <li><a class="btn--show-modal" href="#">Loans</a></li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--1">Features</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--2">Operations</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#section--3">Testimonials</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          We make
+          <!-- Green highlight effect -->
+          <span class="highlight">banking</span>
+          easy
+        </h1>
+        <h4>A simpler banking experience for a <br />better life.</h4>
+        <button class="btn--text btn--scroll-to lm">
+          Learn more &DownArrow;
+        </button>
+        <img src="img/1.jpg" class="header__img" alt="Minimalist bank items" />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Everything you need in a modern bank and more.
+        </h3>
+      </div>
+
+      <div class="features">
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">100% digital bank</h5>
+          <p>
+            We offer the same banking services as traditional banks. We operate
+            without a physical setup, enabling our customers to control their
+            finances from their computers or smartphones. Our DFB license
+            enables us to offer deposits, loans, and investments.
+          </p>
+        </div>
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/2.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/3.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Watch your money grow</h5>
+          <p>
+            We have both investment and savings accounts with low interest
+            rates. It is up to you to decide whether saving or investing is the
+            better choice to reach your financial goals.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">No fees and free debit card included</h5>
+          <p>
+            Open an account and get a free Visa debit card with a online
+            checking account. No monthly fees or overdraft fees. Our debit card
+            works everywhere Visa debit cards are accepted. No monthly account
+            fees and minimum balance requirements.
+          </p>
+        </div>
+        <img
+          src="img/card-lazy.jpg"
+          data-src="img/4.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operations</h2>
+        <h3 class="section__header">Everything is as simple as it gets.</h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            Instant Transfers
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            Instant Loans
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            Instant Closing
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Transfer money anywhere to anyone, instantly with no fees.
+          </h5>
+          <p>
+            Sending money should be quick and easy. We have free bank-to-bank
+            transfers. Sending money to family and friends across the globe,
+            quickly and easily is free. We have no monthly fee, no lock-in
+            contracts and no hidden fees.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Buy a home, car or invest and make your dreams come true, with
+            instant loans.
+          </h5>
+          <p>
+            We offer business, education refinance, home mortgages and auto
+            loans. With low interest rates and fixed monthly payments, our loans
+            allows you to simplify your finances. There are no pre-payment
+            penalties or hidden fees.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            No longer need your account?Close it instantly.
+          </h5>
+          <p>
+            This step is made easy for you to do. All you need is your username
+            and pin the click close account.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Still not sure?</h2>
+        <h3 class="section__header">
+          Millions of users lives are already simpler.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Best financial decision.</h5>
+            <blockquote class="testimonial__text">
+              You can watch your money grow. They have both investment and
+              savings accounts with low interest rates. It is up to you to
+              decide whether saving or investing is the better choice to reach
+              your financial goals.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Kim Smith</h6>
+              <p class="testimonial__location">New York, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Free from high fees.</h5>
+            <blockquote class="testimonial__text">
+              Since this is a online bank, my banking fees are lower. From doing
+              my research, online banks may not have to pay for the cost and
+              upkeep of branches. Those savings may be transferred to you whick
+              I noticed. Plus, they have more no-fee options that adds to your
+              savings.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Tom Long</h6>
+              <p class="testimonial__location">Atlanta, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Finally free from traditional banks.
+            </h5>
+            <blockquote class="testimonial__text">
+              They offer the same banking services as traditional banks. They
+              operate without a physical setup, enabling us customers to control
+              our finances from your own computer or smartphone. Their DFB
+              license enables you to deposits, get loans, and invest.
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Mike Long</h6>
+              <p class="testimonial__location">Los Angeles, USA</p>
+            </address>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up" id="section--4">
+      <div class="section__title">
+        <h3 class="section__header">
+          The best day to join was 7 years ago. The second best is today!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal btc">Open free account!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact</a>
+        </li>
+      </ul>
+      <img src="img/logo.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        Developed By
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://kennedybanda.com"
+          >K.B</a
+        >. | &copy; 2022 All rights reserved.
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your bank account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn2">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="js.js"></script>
+  </body>
+</html>
